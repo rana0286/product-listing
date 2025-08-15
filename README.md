@@ -54,6 +54,7 @@ A product listing page built with **Next.js + TypeScript** featuring:
 │   └── models
 └── tsconfig.json
 ```
+
 ---
 
 ## ⚙️ Getting Started
@@ -69,7 +70,7 @@ cd product-listing-app
 
 ```bash
 npm install
- ```
+```
 
 ### 3️⃣ Start development server
 
@@ -103,6 +104,7 @@ Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 We use **Jest** for testing and **React Testing Library** for component rendering.
 
 Run all tests:
+
 ```bash
 npm run test
 ```
@@ -116,6 +118,7 @@ npm run test
 - **Husky**: Pre-commit hooks that run lint + tests before allowing commits.
 
 Run lint manually:
+
 ```bash
 npm run format
 ```
