@@ -1,14 +1,15 @@
 # 🛍️ Product Listing App
 
 A product listing page built with **Next.js + TypeScript** featuring:
+
 - Product **filtering by type**
 - **General search** functionality
 - Fully configured **Jest** testing, **Husky** git hooks, **ESLint** + **Prettier** code formatting
 
-
 ---
 
 ## 🚀 Features
+
 - **Responsive Product Listing** – Displays products in a clean grid layout.
 - **Filter by Type** – Quickly filter products by type.
 - **Search Function** – Search across product names.
@@ -19,6 +20,7 @@ A product listing page built with **Next.js + TypeScript** featuring:
 ---
 
 ## 🛠 Tech Stack
+
 - **Framework:** [Next.js 15+](https://nextjs.org/)
 - **Language:** [TypeScript 5](https://www.typescriptlang.org/)
 - **Styling:** [Tailwind](https://tailwindcss.com/)
@@ -30,8 +32,9 @@ A product listing page built with **Next.js + TypeScript** featuring:
 ---
 
 ## 📂 Project Structure
+
 .
-├── __mocks__
+├── **mocks**
 │   └── fileMock.js
 ├── eslint.config.mjs
 ├── jest.config.ts
@@ -51,22 +54,22 @@ A product listing page built with **Next.js + TypeScript** featuring:
 │   └── models
 └── tsconfig.json
 
-
 ---
 
 ## ⚙️ Getting Started
 
 ### 1️⃣ Clone the repo
+
 git clone https://github.com/rana0286/product-listing.git
 cd product-listing-app
 
 ### 2️⃣ Install dependencies
-bash```npm install```
 
+bash`npm install`
 
 ### 3️⃣ Start development server
 
-bash```npm run dev```
+bash`npm run dev`
 
 Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 
@@ -75,23 +78,26 @@ Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 ## 🔍 Implementation Details
 
 ### Product Listing
+
 - Data is fetched JSON locally and rendered as a card layout.
 - Each card contains product image, name, price, and sale sticker.
 
 ### Filtering
+
 - **Filter by Type**: Dropdown modifies state to only display products of the selected type.
 
 ### Search
+
 - **General Search**: Text input filters displayed products by name using a case-insensitive match.
 
 ---
 
 ## 🧪 Testing
+
 We use **Jest** for testing and **React Testing Library** for component rendering.
 
 Run all tests:
-bash ```npm run test```
-
+bash `npm run test`
 
 ---
 
@@ -102,11 +108,12 @@ bash ```npm run test```
 - **Husky**: Pre-commit hooks that run lint + tests before allowing commits.
 
 Run lint manually:
-bash ```npm run format```
+bash `npm run format`
 
 ---
 
 ## 📌 Future Improvements
+
 - Infinite scroll or pagination for large data set.
 - Sorting by price or name.
 - API integration for real product data.
@@ -118,4 +125,5 @@ bash ```npm run format```
 ---
 
 ## 👤 Author
-**Vijay Rana**  
+
+**Vijay Rana**
