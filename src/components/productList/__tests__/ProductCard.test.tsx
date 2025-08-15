@@ -3,14 +3,6 @@ import { render, screen } from "@testing-library/react";
 import ProductCard from "../ProductCard";
 import { Product } from "@/models/types";
 
-// Mock Next.js Image component
-jest.mock("next/image", () => ({
-  __esModule: true,
-  default: (props: any) => {
-    return <img {...props} />;
-  },
-}));
-
 describe("ProductCard", () => {
   const baseProduct: Product = {
     index: 1,
@@ -32,7 +24,10 @@ describe("ProductCard", () => {
     render(<ProductCard product={baseProduct} />);
 
     const img = screen.getByRole("img", { name: baseProduct.productName });
-    expect(img).toHaveAttribute("src", `/img/${baseProduct.productImage}`);
+    expect(img).toHaveAttribute(
+      "src",
+      `/_next/image?url=%2Fimg%2F${baseProduct.productImage}&w=3840&q=75`,
+    );
     expect(img).toHaveAttribute("alt", baseProduct.productName);
   });
 

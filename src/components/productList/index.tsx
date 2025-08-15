@@ -5,13 +5,12 @@ import ProductGrid from "./ProductGrid";
 import ProductFilters from "./ProductFilters";
 import type { Product } from "@/models/types";
 
-export default function ProductList({
-  products,
-  error,
-}: {
-  products: Product[] | null;
+type ProductListProps = {
+  products?: Product[] | null;
   error?: boolean;
-}) {
+};
+
+export default function ProductList({ products, error }: ProductListProps) {
   const [selectedType, setSelectedType] = useState("");
   const [search, setSearch] = useState("");
 

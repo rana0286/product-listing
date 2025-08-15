@@ -31,6 +31,7 @@ export default function ProductFilters({
         <input
           type="search"
           id="product-search"
+          data-testid="search-input"
           name="search"
           placeholder="Search products..."
           value={search}
@@ -50,6 +51,7 @@ export default function ProductFilters({
         <select
           id="product-type-filter"
           name="productType"
+          data-testid="filter-by"
           value={selectedType}
           onChange={(e) => onTypeChange(e.target.value)}
           className="w-[64%] rounded border p-2 md:w-auto lg:w-auto"
