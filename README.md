@@ -60,8 +60,10 @@ A product listing page built with **Next.js + TypeScript** featuring:
 
 ### 1️⃣ Clone the repo
 
+```bash
 git clone https://github.com/rana0286/product-listing.git
 cd product-listing-app
+```
 
 ### 2️⃣ Install dependencies
 
