@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
-import { useState, useMemo } from 'react';
-import ProductGrid from './ProductGrid';
-import ProductFilters from './ProductFilters';
-import type { Product } from '@/models/types';
+import { useState, useMemo } from "react";
+import ProductGrid from "./ProductGrid";
+import ProductFilters from "./ProductFilters";
+import type { Product } from "@/models/types";
 
-export default function ProductList( { products }: { products:Product[] }) {
-  const [selectedType, setSelectedType] = useState('');
-  const [search, setSearch] = useState('');
+export default function ProductList({ products }: { products: Product[] }) {
+  const [selectedType, setSelectedType] = useState("");
+  const [search, setSearch] = useState("");
 
   const productTypes = useMemo(
     () => Array.from(new Set(products.map((p) => p.type))),
-    [products]
+    [products],
   );
 
   const filtered = useMemo(() => {

@@ -1,5 +1,5 @@
-import { getProducts } from '@/models/products';
-import ProductList from "@/components/productList"
+import { getProducts } from "@/models/products";
+import ProductList from "@/components/productList";
 
 export default async function ProductsPage() {
   const products = await getProducts();

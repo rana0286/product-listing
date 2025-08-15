@@ -15,16 +15,16 @@ export default function ProductFilters({
 }: Props) {
   return (
     <form
-      className="flex flex-col md:flex-row lg:flex-row gap-4 mb-6 align-middle"
+      className="mb-6 flex flex-col gap-4 align-middle md:flex-row lg:flex-row"
       role="search"
       aria-label="Product filters"
       onSubmit={(e) => e.preventDefault()}
     >
       {/* Search products */}
-      <div className="flex items-center gap-2 flex-1 min-w-[200px]">
+      <div className="flex min-w-[200px] flex-1 items-center gap-2">
         <label
           htmlFor="product-search"
-          className="text-lg font-medium text-gray-700 whitespace-nowrap"
+          className="text-lg font-medium whitespace-nowrap text-gray-700"
         >
           Search Product
         </label>
@@ -35,15 +35,15 @@ export default function ProductFilters({
           placeholder="Search products..."
           value={search}
           onChange={(e) => onSearchChange(e.target.value)}
-          className="border p-2 rounded w-md sm:w-sm"
+          className="w-md rounded border p-2 sm:w-sm"
         />
       </div>
 
       {/* Filter by product type */}
-      <div className="flex items-center flex-1 sm:flex-none gap-2 min-w-[180px] justify-between md:justify-normal lg:justify-normal">
+      <div className="flex min-w-[180px] flex-1 items-center justify-between gap-2 sm:flex-none md:justify-normal lg:justify-normal">
         <label
           htmlFor="product-type-filter"
-          className="text-lg font-medium text-gray-700 whitespace-nowrap"
+          className="text-lg font-medium whitespace-nowrap text-gray-700"
         >
           Filter By
         </label>
@@ -52,7 +52,7 @@ export default function ProductFilters({
           name="productType"
           value={selectedType}
           onChange={(e) => onTypeChange(e.target.value)}
-          className="border p-2 rounded w-[64%] md:w-auto lg:w-auto"
+          className="w-[64%] rounded border p-2 md:w-auto lg:w-auto"
         >
           <option value="">All</option>
           {types.map((t) => (

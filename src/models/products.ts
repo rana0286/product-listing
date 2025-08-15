@@ -1,5 +1,5 @@
-import type { Product } from './types';
-import products from '@/data/products.json';
+import type { Product } from "./types";
+import products from "@/data/products.json";
 
 // Simulate async fetch (can be replaced with fetch/axios call later)
 export async function getProducts(): Promise<Product[]> {
