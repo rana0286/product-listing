@@ -33,7 +33,7 @@ A product listing page built with **Next.js + TypeScript** featuring:
 
 ## 📂 Project Structure
 
-.
+```bash
 ├── **mocks**
 │   └── fileMock.js
 ├── eslint.config.mjs
@@ -53,7 +53,7 @@ A product listing page built with **Next.js + TypeScript** featuring:
 │   ├── data
 │   └── models
 └── tsconfig.json
-
+```
 ---
 
 ## ⚙️ Getting Started
@@ -65,11 +65,11 @@ cd product-listing-app
 
 ### 2️⃣ Install dependencies
 
-bash`npm install`
+```bash npm install```
 
 ### 3️⃣ Start development server
 
-bash`npm run dev`
+```bash npm run dev```
 
 Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 
@@ -97,7 +97,7 @@ Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 We use **Jest** for testing and **React Testing Library** for component rendering.
 
 Run all tests:
-bash `npm run test`
+```bash npm run test```
 
 ---
 
@@ -108,7 +108,7 @@ bash `npm run test`
 - **Husky**: Pre-commit hooks that run lint + tests before allowing commits.
 
 Run lint manually:
-bash `npm run format`
+```bash npm run format```
 
 ---
 
