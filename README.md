@@ -63,7 +63,7 @@ A product listing page built with **Next.js + TypeScript** featuring:
 
 ```bash
 git clone https://github.com/rana0286/product-listing.git
-cd product-listing-app
+cd product-listing
 ```
 
 ### 2️⃣ Install dependencies
